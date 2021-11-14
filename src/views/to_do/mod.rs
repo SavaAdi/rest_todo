@@ -17,6 +17,7 @@ pub fn item_factory(app: &mut web::ServiceConfig) {
 fn path(following_path: &str) -> String {
     let base_path: Path = Path {
         prefix: String::from("/item"),
+        backend: true
     };
 
     base_path.define(String::from(following_path))

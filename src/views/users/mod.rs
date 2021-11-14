@@ -5,6 +5,7 @@ use super::path::Path;
 pub fn user_factory(app: &mut web::ServiceConfig) {
     let base_path: Path = Path {
         prefix: String::from("/user"),
+        backend: true
     };
     
     app.route(

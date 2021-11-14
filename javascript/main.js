@@ -65,7 +65,7 @@ function renderItems(items, processType, elementId, processFunction) {
           }
       }
   });
-  xhr.open(method, url);
+  xhr.open(method, "/api/v1" + url);
   xhr.setRequestHeader('content-type', 'application/json');
   xhr.setRequestHeader('user-token', localStorage.getItem("user-token"));
   return xhr
