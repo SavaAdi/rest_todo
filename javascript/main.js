@@ -1,5 +1,7 @@
 if (localStorage.getItem("user-token") == null) {
   window.location.replace(document.location.origin + "/login");
+} else {
+  getItems;
 }
 
 
